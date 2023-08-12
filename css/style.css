@@ -1,0 +1,239 @@
+body{
+    overflow-x: hidden;
+    
+}
+body p{
+    color: #7c7a7a;
+
+}
+.bgImage{
+    background-image: url('../img/intro-bg.jpg');
+    background-size: cover;
+    /* background-position: 50% 50%; */
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+
+.navbar{
+    --bs-navbar-color: #fff;
+    --bs-navbar-active-color: red;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-hover-color: red;
+    --bs-navbar-brand-hover-color: red;
+    --bs-navbar-toggler-border-color: #fff;
+}
+.navbar-toggler{
+    color: #fff;
+}
+.caption{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    color: #fff;
+    
+}
+p {
+    margin-bottom: .25rem;
+}
+.caption h1{
+    font-size: 3rem;
+}
+.caption span{
+    animation: moving 3s  infinite ease-out ;
+    position: absolute;
+    
+}
+.caption-container span , .about-me span{
+    font-weight:700;
+}
+
+/* secound section */
+
+.Headline h2{
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+    font-weight: bold;
+}
+.bio{
+    line-height: 2rem;
+}
+
+
+/* blue section */
+.background-img{
+    background-image: url('../img/post-3.jpg');
+    background-position:100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* portfolio section */
+
+.img-container{
+    overflow: hidden;
+}
+.img-container img{
+    transition-duration: 3s;
+}
+.img-container:hover img{
+   
+    transform: scale(1.5);
+    transition-duration: 3s ;
+}
+.caption-container{
+    overflow: hidden;
+}
+
+/* slider section */
+
+.carousel{
+    background-image: url('../img/overlay-bg.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    position: relative;
+}
+.carousel-caption{
+    position: relative;
+    right: 0;
+    left: 0;
+}
+.carousel-indicators [data-bs-target]{
+    width:1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+/* Blog Section */
+
+.card-body a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+
+}
+.card-body a:hover{
+     
+        color: blue;
+    
+}
+
+/* Contact section */
+
+.btn{
+    padding: .5rem 1.5rem;
+    font-size: 1.25rem;
+}
+.bg-blue{
+    background-color: rgba(0, 120, 255, .4  );
+}
+#contact{
+    background-image: url('../img/overlay-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+}
+
+
+/* Blog try */
+
+.img-card img{
+    width: 2.5rem;
+}
+
+.positioned-title{
+   transform: translate(-50% , 50%);
+    background-color: rgba(0, 120, 255, .9 );
+}
+
+
+
+@keyframes moving {
+    from{
+        right:-55%;
+
+    }
+    to
+    {
+        right:33%;
+
+    }
+    
+}
+
+
+
+@media screen and (min-width:425px)and (max-width:768px) {
+
+    .bgImage{
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+@keyframes moving {
+    from{
+        right:-55%;
+
+    }
+    to
+    {
+        right: 15%;
+
+    }
+    
+}
+}
+
+@media screen and (min-width:770px)and (max-width:1024px) {
+
+    .bgImage{
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+@keyframes moving {
+    from{
+        right:-55%;
+
+    }
+    to
+    {
+        right: 30%;
+
+    }
+    
+}
+}
+
+@media screen and (min-width:320px)and (max-width:425px) {
+
+    .bgImage{
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+@keyframes moving {
+    from{
+        right:-55%;
+
+    }
+    to
+    {
+        right: 0;
+
+    }
+    
+}
+}
